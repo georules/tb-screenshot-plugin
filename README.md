@@ -27,6 +27,8 @@ tb.events.on("loaded", function() {
 })
 ```
 
++ make in tributary root
+
 ## How to use
 + Open a tributary inlet
 + Click Config, then Screenshot
