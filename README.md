@@ -32,10 +32,12 @@ tb.events.on("loaded", function() {
 + Click Config, then Screenshot
 + Click Save
 
-## How it works
-This plugin uses canvg https://code.google.com/p/canvg/ to process the svg display from Tributary.  It converts to canvas element, which is hidden, and then this is converted into a PNG.  This PNG is uploaded to imgur via Tributary's imgur event trigger.  Your github keys and imgur keys must be configured properly in settings.js to use this.
+See it here: http://youtu.be/uPJu5QUzauI 
 
-Note that when you set up your API keys with github and imgur that the callback routes for are:
+## How it works
+This plugin uses canvg https://code.google.com/p/canvg/ to process the svg display from Tributary.  It converts to a canvas element, which is hidden, and then this is converted into a PNG.  This PNG is uploaded to imgur via Tributary's imgur event trigger, and set as the thumbnail in tributary's database on save.
+
+Your github keys and imgur keys must be configured properly in settings.js to use this.  Note that when you set up your API keys with github and imgur that the callback routes for are:
 + /github-authenticated
 + /imgur-authenticated
 
