@@ -19,11 +19,11 @@ This screenshot plugin lets you click a button in the Config panel to automatica
 
 ```
 tb.events.on("loaded", function() { 
-	[...]
-	tb.loadPlugin("/static/plugins/tb-screenshot-plugin/plugin.json", {}, 
-		function(e) {console.log("callback: ",e);}
-	);
-	[...]
+  [...]
+  tb.loadPlugin("/static/plugins/tb-screenshot-plugin/plugin.json", {}, 
+    function(e) {console.log("callback: ",e);}
+  );
+  [...]
 })
 ```
 
