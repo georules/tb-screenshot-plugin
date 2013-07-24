@@ -6,19 +6,15 @@ This screenshot plugin lets you click a button in the Config panel to automatica
 + Install a localhost Tributary 
 + Clone this plugin repository into static/plugins 
 + Include the following libraries from in sandbox/templates/inlet.handlebars  (I put them after "UI Related")
-```
-	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script>
-	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/StackBlur.js"></script>
-	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
-```
+    <script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script>
+    <script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/StackBlur.js"></script>
+    <script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>
 + Put the following call in sandbox sandbox/templates/inlet.handlebars in the on "loaded" anonymous function.
-```
-	tb.events.on("loaded", function() { 
-	...
-		tb.loadPlugin("/static/plugins/tb-screenshot-plugin/plugin.json", {}, function(e) {console.log("callback: ",e);});
-	...
-	})
-````
+    tb.events.on("loaded", function() { 
+      ...
+      tb.loadPlugin("/static/plugins/tb-screenshot-plugin/plugin.json", {}, function(e) {console.log("callback: ",e);});
+      ...
+    })
 
 ## How to use
 + Open a tributary inlet
